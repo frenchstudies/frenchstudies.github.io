@@ -1,9 +1,19 @@
 /* styles.css */
 
-/* 1. (Removed JetBrains Mono import; using system Arial instead) */
+/* 1. Using system Arial; no import needed */
 
-/* 2. Base reset + black background, white text, Arial */
-html, body {
+/* 2. Base reset + black background, white text, responsive font sizing */
+html {
+  /* 
+    clamp(min, preferred, max):
+    – min  : 14px on very small screens
+    – preferred: 1.5vw (i.e. 1.5% of viewport width)
+    – max : 20px on very large screens
+  */
+  font-size: clamp(14px, 1.5vw, 20px);
+}
+
+body {
   margin: 0;
   padding: 2rem;
   background: #000;
@@ -29,7 +39,7 @@ p, ol, ul {
   text-align: left;
   line-height: 1.6;
   margin-bottom: 1em;
-  background: transparent;  /* preserves any inline background transparency */
+  background: transparent;
 }
 
 /* 6. Optional: remove default list styles indent for a tighter look */
