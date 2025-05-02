@@ -1,4 +1,41 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css">
+        <title>baguette</title>
+        <style>
+            /* Container to hold the button fixed at bottom center */
+            .button-container {
+              position: fixed;
+              bottom: 20px;           /* Distance from bottom of viewport */
+              left: 50%;              /* Start at horizontal center */
+              transform: translateX(-50%); /* Shift left by 50% of its own width */
+              z-index: 1000;          /* Ensure it’s above other content */
+            }
+            .button-container a {
+              display: inline-block;
+              padding: 6px 16px;
+              background-color: #2a92ff;  /* Bootstrap primary blue */
+              color: white;
+              text-decoration: none;
+              border-radius: 1px;
+              font-family: sans-serif;
+              font-size: 12px;
+            }
+            .button-container a:hover {
+              background-color: #0056b3;
+            }
+        </style>
+</head>
+<body>
+        <!-- Button Container -->
+        <div class="button-container">
+                <a href="FICHE_METHODECommentaire.html">Go to Other Page</a>
+        </div>
+</body>
+<!DOCTYPE html>
 <!-- Created by pdf2htmlEX (https://github.com/pdf2htmlEX/pdf2htmlEX) -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
