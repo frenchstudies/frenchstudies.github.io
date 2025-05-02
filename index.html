@@ -5,8 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css">
         <title>FRENCH</title>
+        <style>
+            /* Container to hold the button fixed at bottom center */
+            .button-container {
+              position: fixed;
+              bottom: 20px;           /* Distance from bottom of viewport */
+              left: 50%;              /* Start at horizontal center */
+              transform: translateX(-50%); /* Shift left by 50% of its own width */
+              z-index: 1000;          /* Ensure it’s above other content */
+            }
+            .button-container a {
+              display: inline-block;
+              padding: 12px 24px;
+              background-color: #007BFF;  /* Bootstrap primary blue */
+              color: white;
+              text-decoration: none;
+              border-radius: 4px;
+              font-family: sans-serif;
+              font-size: 16px;
+            }
+            .button-container a:hover {
+              background-color: #0056b3;
+            }
+        </style>
 </head>
 <body>
+        <!-- Button Container -->
+        <div class="button-container">
+                <a href="FICHE_METHODECommentaire.html">Go to Other Page</a>
+        </div>
         <p style="margin-bottom: 0.11in;text-align: left;line-height: 108%;background: transparent;"><span size="4" style="font-size:19px;">S&eacute;quence 1 ; Gargantua de Rabelais&nbsp;</span></p>
         <p style="margin-bottom: 0.11in;text-align: left;line-height: 108%;background: transparent;"><span size="4" style="font-size:19px;">Texte 1&nbsp;: Le conseil de guerre de Picrochole</span></p>
         <p style="margin-bottom: 0.11in;text-align: left;line-height: 108%;background: transparent;"><br>&nbsp;</p>
